@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="wlkata_mt4_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.02703 -0.00052926 0.030287"
+        rpy="0 0 0" />
+      <mass
+        value="2.0466" />
+      <inertia
+        ixx="0.0019593"
+        ixy="-2.3537E-06"
+        ixz="2.9495E-06"
+        iyy="0.0018116"
+        iyz="-1.2137E-06"
+        izz="0.0035737" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.0092748 -0.00018441 -0.039415"
+        rpy="0 0 0" />
+      <mass
+        value="2.408" />
+      <inertia
+        ixx="0.00073683"
+        ixy="-3.5891E-08"
+        ixz="-7.0998E-05"
+        iyy="0.0012729"
+        iyz="6.892E-08"
+        izz="0.0011934" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.14"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.094"
+      upper="2.443"
+      effort="100.1"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.00164684229395519 -0.0395683489030114 -0.00868750450635196"
+        rpy="0 0 0" />
+      <mass
+        value="0.710878068128731" />
+      <inertia
+        ixx="0.000932704854635179"
+        ixy="3.31522799537786E-07"
+        ixz="8.00522543080623E-07"
+        iyy="0.000109060102432217"
+        iyz="4.44610873064812E-05"
+        izz="0.000976430617308653" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.046 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.575"
+      upper="0.994"
+      effort="100.1"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="-0.000398083211439859 -0.00844918862583643 -0.0264979652131019"
+        rpy="0 0 0" />
+      <mass
+        value="0.0832782808336382" />
+      <inertia
+        ixx="7.87783820445832E-06"
+        ixy="1.2365433026123E-06"
+        ixz="-3.05548807270531E-07"
+        iyy="1.64719975974359E-05"
+        iyz="-1.28549309751977E-06"
+        izz="2.19922200829749E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="continuous">
+    <origin
+      xyz="0 -0.13 0"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 -1" />
+    <mimic
+      joint="joint2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.0548052349762136 -0.00832969977765713 -0.000233681966134227"
+        rpy="0 0 0" />
+      <mass
+        value="0.384078376095662" />
+      <inertia
+        ixx="2.76979706890859E-05"
+        ixy="-1.30973106427895E-05"
+        ixz="-7.02719520417806E-06"
+        iyy="0.00101454549136257"
+        iyz="4.11637178095307E-07"
+        izz="0.00102898731974257" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.244"
+      upper="0.994"
+      effort="100.1"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="0.0302922081649755 -0.00126749630980938 0.00126987704683693"
+        rpy="0 0 0" />
+      <mass
+        value="0.295630442014825" />
+      <inertia
+        ixx="5.75384337469486E-05"
+        ixy="6.01160743822192E-06"
+        ixz="4.11650139108646E-07"
+        iyy="9.95695431877672E-05"
+        iyz="-4.40972127717323E-06"
+        izz="6.44078564975212E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="continuous">
+    <origin
+      xyz="0.15 0 0"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 0 -1" />
+    <mimic
+      joint="joint3"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="-3.62722907265578E-10 -1.47645093697032E-09 0.00403306620385582"
+        rpy="0 0 0" />
+      <mass
+        value="0.0137742689049151" />
+      <inertia
+        ixx="4.84102067021234E-07"
+        ixy="1.4786634242315E-09"
+        ixz="2.05307036870248E-14"
+        iyy="4.84102314201502E-07"
+        iyz="8.0411428033963E-14"
+        izz="5.95069606748532E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0.035 -0.027431 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link6" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141"
+      upper="3.141"
+      effort="100.1"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link8">
+    <inertial>
+      <origin
+        xyz="-2.96984659087229E-15 -1.66533453693773E-16 3.15625799456324E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00404919792872912" />
+      <inertia
+        ixx="3.4021543206253E-08"
+        ixy="-2.57664522482417E-26"
+        ixz="4.61691223340672E-25"
+        iyy="3.4021543206253E-08"
+        iyz="1.951345004771E-23"
+        izz="2.53236484097191E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint8"
+    type="continuous">
+    <origin
+      xyz="-0.04 0 0"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link8" />
+    <axis
+      xyz="0 0 -1" />
+    <mimic
+      joint="joint2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="link9">
+    <inertial>
+      <origin
+        xyz="1.84634564581732E-11 -0.0649999992918987 -0.00347881894556013"
+        rpy="0 0 0" />
+      <mass
+        value="0.0621687149810038" />
+      <inertia
+        ixx="0.000100281936424922"
+        ixy="5.61613051773521E-18"
+        ixz="-7.28578915786166E-16"
+        iyy="1.05555754907866E-06"
+        iyz="-4.73848869447179E-16"
+        izz="0.000101078348871111" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint9"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link8" />
+    <child
+      link="link9" />
+    <axis
+      xyz="0 0 -1" />
+    <mimic
+      joint="joint3"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="link7">
+    <inertial>
+      <origin
+        xyz="0.074999991135837 1.54999402202094E-10 0.021500000231994"
+        rpy="0 0 0" />
+      <mass
+        value="0.0684204461957199" />
+      <inertia
+        ixx="1.10159445080306E-06"
+        ixy="5.62174417731939E-20"
+        ixz="-1.23416483281998E-07"
+        iyy="0.000145117090911186"
+        iyz="3.49869663483512E-13"
+        izz="0.000145933593046846" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint7"
+    type="continuous">
+    <origin
+      xyz="0.024513 -0.020569 0"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link7" />
+    <axis
+      xyz="0 0 1" />
+    <mimic
+      joint="joint3"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="link10">
+    <inertial>
+      <origin
+        xyz="-0.00373573701414555 -0.0649999910552738 -0.0355215951408583"
+        rpy="0 0 0" />
+      <mass
+        value="0.0609758190138201" />
+      <inertia
+        ixx="9.67051036157404E-05"
+        ixy="-6.03490499058941E-18"
+        ixz="-7.54325349984243E-09"
+        iyy="1.43113021009284E-06"
+        iyz="3.22111491821249E-14"
+        izz="9.78820902491419E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint10"
+    type="continuous">
+    <origin
+      xyz="0.017746 0 0.015023"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link10" />
+    <axis
+      xyz="0 0 1" />
+    <mimic
+      joint="joint2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="link11">
+    <inertial>
+      <origin
+        xyz="-0.00453231312597646 -6.22016622582322E-05 -0.0173411963300393"
+        rpy="0 0 0" />
+      <mass
+        value="0.288951297935826" />
+      <inertia
+        ixx="5.08893754354506E-05"
+        ixy="2.89259616271662E-07"
+        ixz="8.79735664418427E-08"
+        iyy="7.73013674192084E-05"
+        iyz="6.3938266859348E-08"
+        izz="0.00012319519865769" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_mt4_description/meshes/link11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint11"
+    type="continuous">
+    <origin
+      xyz="0.046 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link11" />
+    <axis
+      xyz="0 0 -1" />
+    <mimic
+      joint="joint3"
+      multiplier="1"
+      offset="0" />
+  </joint>
+</robot>

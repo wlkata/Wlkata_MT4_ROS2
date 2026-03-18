@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: wlkata_mt4_description
+    relative_path: urdf/wlkata_mt4_description.urdf
+  srdf:
+    relative_path: config/wlkata_mt4_description.srdf
+  package_settings:
+    author_name: DSS
+    author_email: 136645224gg@gmail.com
+    generated_timestamp: 1773806274
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
